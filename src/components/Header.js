@@ -1,41 +1,67 @@
 import React from "react";
-import selfie from "../assets/selfie.jpg";
-
+import characterIcon from "../assets/kirbyicon.png";
 const Header = () => {
 	return (
-		<div className="header">
-			<div class="jumbotron jumbotron-fluid p-5">
-				<div class="container">
-					<img
-						src={selfie}
-						class="rounded mx-auto d-block img-thumbnail"
-						id="selfie"
-						alt="..."
-					/>
-
-					<h1 class="display-4">jason day</h1>
-					<p class="lead">
-						full stack developer{" "}
-					</p>
-				</div>
+		<section class="hero is-info is-large">
+			<div class="hero-head">
+				<nav class="navbar">
+					<div class="container">
+						<div class="navbar-brand">
+							<a class="navbar-item">
+								<img
+									// src={
+									// 	characterIcon
+									// }
+									src="https://bulma.io/images/bulma-type-white.png"
+									alt="Logo"
+								/>
+							</a>
+							<span
+								class="navbar-burger"
+								data-target="navbarMenuHeroB"
+							>
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</div>
+						<div
+							id="navbarMenuHeroB"
+							class="navbar-menu"
+						>
+							<div class="navbar-end">
+								<a class="navbar-item is-active">
+									Home
+								</a>
+								<a class="navbar-item">
+									Examples
+								</a>
+								<a class="navbar-item">
+									Documentation
+								</a>
+								<span class="navbar-item">
+									<a class="button is-info is-inverted">
+										<span class="icon">
+											<i class="fab fa-github"></i>
+										</span>
+										<span>
+											Download
+										</span>
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
 
-			<figure class="text-center">
-				<blockquote class="blockquote">
-					<p>
-						It is no nation that we inhabit,
-						but a language. Make no mistake;
-						our native toungue is our true
-						fatherland.
-					</p>
-				</blockquote>
-				<figcaption class="blockquote-footer">
-					<cite title="Source Title">
-						Emil Cioran
-					</cite>
-				</figcaption>
-			</figure>
-		</div>
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<p class="title">Title</p>
+					<p class="subtitle">Subtitle</p>
+				</div>
+			</div>
+		</section>
 	);
 };
 
